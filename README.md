@@ -30,3 +30,10 @@ This project is a prototype AI system designed for SlateMate’s **FocusSphere**
 Install dependencies with:
 ```bash
 pip install streamlit sentence-transformers scikit-learn pandas openpyxl
+**HOW TO RUN **
+In the terminal :
+streamlit run app.py
+
+**Well-being Score Formula**
+
+wellbeing_score = relevance_score * (1 - toxicity_score) * 100
