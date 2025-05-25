@@ -10,7 +10,7 @@ This project is a prototype AI system designed for SlateMate’s **FocusSphere**
 - ✅ Ingests a real content feed from an Excel file
 - ✅ Calculates content relevance using cosine similarity
 - ✅ Applies a safety filter based on toxicity score
-- ✅ Combines both into a **Well-being Score**
+- ✅ Combines both into a **Well-being Score** (wellbeing_score = relevance_score * (1 - toxicity_score) * 100)
 - ✅ Returns top 5 recommendations and blocks unsafe/irrelevant content
 - ✅ Bonus: Contextual “nudge” message for engagement
 
@@ -34,6 +34,5 @@ pip install streamlit sentence-transformers scikit-learn pandas openpyxl
 In the terminal :
 streamlit run app.py
 
-**Well-being Score Formula**
 
-wellbeing_score = relevance_score * (1 - toxicity_score) * 100
+
